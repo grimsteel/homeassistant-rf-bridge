@@ -1898,6 +1898,18 @@
 				)
 				(polyline
 					(pts
+						(xy -8.763 0.381) (xy -9.271 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -8.763 0.381) (xy -8.763 0.889)
 					)
 					(stroke
@@ -1910,7 +1922,7 @@
 				)
 				(polyline
 					(pts
-						(xy -8.763 0.381) (xy -9.271 0.381)
+						(xy -8.636 -0.635) (xy -9.525 0.254)
 					)
 					(stroke
 						(width 0)
@@ -1935,18 +1947,6 @@
 				(polyline
 					(pts
 						(xy -8.636 -0.635) (xy -8.636 -0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.636 -0.635) (xy -9.525 0.254)
 					)
 					(stroke
 						(width 0)
@@ -5194,6 +5194,10 @@
 	(no_connect
 		(at 218.44 54.61)
 		(uuid "99611f77-e235-4aca-947f-e102a4cc0cb3")
+	)
+	(no_connect
+		(at 218.44 82.55)
+		(uuid "ad26ed34-ac68-4658-89a7-088e3a1b7ab8")
 	)
 	(no_connect
 		(at 45.72 31.75)
