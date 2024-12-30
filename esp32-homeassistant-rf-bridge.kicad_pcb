@@ -17292,6 +17292,19 @@
 		(layer "Edge.Cuts")
 		(uuid "f1af63df-4b27-4ebe-ad9d-6528f8fe68d0")
 	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 87.65 37.75 270)
+		(layer "F.SilkS")
+		(uuid "6bac7564-b3a3-49ff-aa95-0fc6fb78df2f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "@grimsteel\n"
 		(at 116.9 60.25 0)
 		(layer "B.SilkS")
