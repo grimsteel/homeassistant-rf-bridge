@@ -351,6 +351,17 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 0 -5.842)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0 -5.842) (xy 0 4.318)
@@ -361,17 +372,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(circle
-					(center 0 -5.842)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(rectangle
@@ -1886,7 +1886,7 @@
 			(symbol "TSOP41xx_0_1"
 				(polyline
 					(pts
-						(xy -8.763 0.381) (xy -9.652 1.27)
+						(xy -8.763 0.381) (xy -8.763 0.889)
 					)
 					(stroke
 						(width 0)
@@ -1910,7 +1910,19 @@
 				)
 				(polyline
 					(pts
-						(xy -8.763 0.381) (xy -8.763 0.889)
+						(xy -8.763 0.381) (xy -9.652 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.636 -0.635) (xy -8.636 -0.127)
 					)
 					(stroke
 						(width 0)
@@ -1935,18 +1947,6 @@
 				(polyline
 					(pts
 						(xy -8.636 -0.635) (xy -9.144 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.636 -0.635) (xy -8.636 -0.127)
 					)
 					(stroke
 						(width 0)
@@ -2065,7 +2065,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.651 -3.556) (xy 1.651 -3.302)
+						(xy 1.651 -3.556) (xy 1.524 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -2077,7 +2077,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.651 -3.556) (xy 1.524 -3.556)
+						(xy 1.651 -3.556) (xy 1.651 -3.302)
 					)
 					(stroke
 						(width 0)
@@ -3803,6 +3803,203 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Optical:LDR07"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at -5.08 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LDR07"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(property "Footprint" "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical"
+				(at 4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "light dependent resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "light dependent photo resistor LDR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R*LDR*5.1x4.3mm*P3.4mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LDR07_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.762) (xy -4.064 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.762) (xy -2.286 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.762) (xy -1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -2.286) (xy -4.064 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -2.286) (xy -2.286 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -2.286) (xy -1.524 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LDR07_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -4711,6 +4908,18 @@
 		(uuid 895c8fe2-cc9c-4e92-8e0a-d8a67be32f91)
 	)
 	(rectangle
+		(start 107.95 78.74)
+		(end 142.24 101.6)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6faa727-932b-43b9-afbe-b358b4f776cb)
+	)
+	(rectangle
 		(start 116.84 39.37)
 		(end 134.62 72.39)
 		(stroke
@@ -4862,6 +5071,16 @@
 		)
 		(uuid "58d5c94d-1724-4369-bae1-f0a04def2cf5")
 	)
+	(text "PHOTORESISTOR"
+		(exclude_from_sim no)
+		(at 116.586 80.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5aaae8c4-06eb-47c6-8e6f-6ed59d162fee")
+	)
 	(text "C14663"
 		(exclude_from_sim no)
 		(at 73.66 97.282 0)
@@ -4925,6 +5144,17 @@
 			)
 		)
 		(uuid "9a6ade33-3736-4276-997c-2db89ad73d4c")
+	)
+	(text "C25744"
+		(exclude_from_sim no)
+		(at 138.176 95.504 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 255 255 1)
+			)
+		)
+		(uuid "9c8e6631-74b4-4e1a-8da0-4f256d5e1648")
 	)
 	(text "DECOUPLING CAPS"
 		(exclude_from_sim no)
@@ -5158,10 +5388,6 @@
 	(no_connect
 		(at 218.44 44.45)
 		(uuid "2efb3b14-187f-4fac-99ed-ef3d0b1a679b")
-	)
-	(no_connect
-		(at 218.44 95.25)
-		(uuid "5512877d-07ea-4cd8-b54d-051a57ed30f3")
 	)
 	(no_connect
 		(at 45.72 29.21)
@@ -5448,6 +5674,16 @@
 			(type default)
 		)
 		(uuid "b1409ebe-d855-4363-b218-2d403453e8f2")
+	)
+	(wire
+		(pts
+			(xy 134.62 93.98) (xy 129.54 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b572514c-1d5a-42f6-9aa5-27ce21e6aa8b")
 	)
 	(wire
 		(pts
@@ -5982,6 +6218,28 @@
 		(uuid "6250c8f1-a473-4256-87f1-184c12bafa18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 145.7863 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LDR"
+		(shape input)
+		(at 132.08 93.98 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6648617d-df88-47e8-9611-7918a7ff2f16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 100.5333 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6563,6 +6821,28 @@
 			)
 		)
 	)
+	(global_label "LDR"
+		(shape input)
+		(at 218.44 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dd930187-e118-4895-bc10-995325e7fbfa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.9933 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MISO"
 		(shape input)
 		(at 26.67 125.73 180)
@@ -6738,6 +7018,74 @@
 			(project "esp32-homeassistant-rf-bridge"
 				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Optical:LDR07")
+		(at 125.73 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03df4e10-b441-40b9-9ec7-f82413cb7c6e")
+		(property "Reference" "R5"
+			(at 125.73 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LDR07"
+			(at 125.73 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:R_LDR_5.0x4.1mm_P3mm_Vertical"
+			(at 125.73 89.535 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.tme.eu/de/Document/f2e3ad76a925811312d226c31da4cd7e/LDR07.pdf"
+			(at 127 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "light dependent resistor"
+			(at 125.73 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51fa2477-9bdd-4441-bb47-4f86cf828744")
+		)
+		(pin "2"
+			(uuid "296c73f3-65e8-45e8-a613-44b4a76edf55")
+		)
+		(instances
+			(project ""
+				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7484,6 +7832,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 121.92 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d1d6565-9a11-44f0-82cc-692f29490550")
+		(property "Reference" "#PWR038"
+			(at 125.73 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 118.11 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 121.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32fdb6a1-f57b-4ca1-a57d-a891f52e5c6e")
+		)
+		(instances
+			(project ""
+				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:ESD9B3.3ST5G")
 		(at 30.48 88.9 0)
 		(unit 1)
@@ -8065,6 +8480,76 @@
 			(project "esp32-homeassistant-rf-bridge"
 				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
 					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 90.17 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "262beef4-ba07-45a5-8505-d6182fc6ac20")
+		(property "Reference" "R6"
+			(at 137.16 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 137.16 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 136.398 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e21a52ce-d5b3-4fb8-8334-609b1879314e")
+		)
+		(pin "1"
+			(uuid "bc4c4df2-566a-4fce-bfa2-315d2455136a")
+		)
+		(instances
+			(project ""
+				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9692,6 +10177,72 @@
 			(project "esp32-homeassistant-rf-bridge"
 				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 134.62 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8862bd53-88f2-4915-b2ea-47421e758317")
+		(property "Reference" "#PWR037"
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 134.62 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1f9358c-d63c-4419-9d9c-d802cc381d85")
+		)
+		(instances
+			(project ""
+				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
