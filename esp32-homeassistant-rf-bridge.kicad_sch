@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241209)
+	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "9ac8e10e-6a60-4d32-be94-5bad085be37b")
@@ -336,7 +336,7 @@
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(arc
@@ -348,7 +348,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(arc
@@ -384,7 +384,7 @@
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(arc
@@ -396,7 +396,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
@@ -458,17 +458,6 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 -5.842)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -5.842) (xy 0 4.318)
@@ -479,6 +468,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.842)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(rectangle
@@ -1993,18 +1993,6 @@
 			(symbol "TSOP41xx_0_1"
 				(polyline
 					(pts
-						(xy -8.763 0.381) (xy -9.271 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -8.763 0.381) (xy -9.652 1.27)
 					)
 					(stroke
@@ -2017,7 +2005,31 @@
 				)
 				(polyline
 					(pts
+						(xy -8.763 0.381) (xy -9.271 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -8.763 0.381) (xy -8.763 0.889)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.636 -0.635) (xy -9.525 0.254)
 					)
 					(stroke
 						(width 0)
@@ -2042,18 +2054,6 @@
 				(polyline
 					(pts
 						(xy -8.636 -0.635) (xy -8.636 -0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.636 -0.635) (xy -9.525 0.254)
 					)
 					(stroke
 						(width 0)
@@ -3769,10 +3769,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:XC6206PxxxMR"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3784,7 +3781,7 @@
 					)
 				)
 			)
-			(property "Value" "XC6206PxxxMR"
+			(property "Value" "AMS1117-3.3"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -3793,17 +3790,25 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-				(at 0 5.715 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3812,7 +3817,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3821,7 +3826,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3830,19 +3835,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?3*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XC6206PxxxMR_0_1"
+			(symbol "AMS1117-3.3_0_1"
 				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3852,7 +3848,7 @@
 					)
 				)
 			)
-			(symbol "XC6206PxxxMR_1_1"
+			(symbol "AMS1117-3.3_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -4021,7 +4017,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 -2.286) (xy -1.524 -1.524)
+						(xy -1.524 -2.286) (xy -4.064 0.254)
 					)
 					(stroke
 						(width 0)
@@ -4045,7 +4041,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 -2.286) (xy -4.064 0.254)
+						(xy -1.524 -2.286) (xy -1.524 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -4980,7 +4976,7 @@
 	)
 	(rectangle
 		(start 13.97 69.85)
-		(end 46.99 101.6)
+		(end 46.99 90.17)
 		(stroke
 			(width 0)
 			(type default)
@@ -5264,6 +5260,16 @@
 		)
 		(uuid "7e71a4ff-186b-4cc8-aafd-1f6b50bafd44")
 	)
+	(text "Note: These ESDs ruin the USB signal,\n so I had to remove the ones\n on the USB lines"
+		(exclude_from_sim no)
+		(at 30.48 85.852 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "9764a3ef-4441-4c6e-8a4c-72c274cdbf6a")
+	)
 	(text "USB"
 		(exclude_from_sim no)
 		(at 17.018 14.986 0)
@@ -5513,10 +5519,6 @@
 	(no_connect
 		(at 218.44 49.53)
 		(uuid "6dc4594a-736a-4a5b-8b34-0aeb9f726d3a")
-	)
-	(no_connect
-		(at 218.44 95.25)
-		(uuid "92b5949f-3ef5-4d02-b47d-5a79641b2c6f")
 	)
 	(no_connect
 		(at 22.86 62.23)
@@ -5932,28 +5934,6 @@
 			)
 		)
 	)
-	(global_label "D+"
-		(shape input)
-		(at 26.67 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0832f97a-f3cb-48ee-999a-234b1de9e001")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.8424 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CC1101_0_0"
 		(shape input)
 		(at 46.99 120.65 0)
@@ -6262,28 +6242,6 @@
 			)
 		)
 	)
-	(global_label "D-"
-		(shape input)
-		(at 26.67 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3b5245ba-2892-4e5d-ab42-15ef12319b89")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.8424 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MOSI"
 		(shape input)
 		(at 218.44 69.85 0)
@@ -6319,6 +6277,28 @@
 		(uuid "4bdb005a-54e8-43f2-81a0-94bfa9c6c5e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 221.7276 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BUZ"
+		(shape input)
+		(at 218.44 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d2dee33-983e-4917-b24b-aafa4553b793")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.2352 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7791,7 +7771,7 @@
 		(at 265.43 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7994,7 +7974,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09f9c401-bb0d-4714-9d97-541b0aa2de01")
 		(property "Reference" "C13"
@@ -8262,82 +8242,6 @@
 			(project ""
 				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD9B3.3ST5G")
-		(at 30.48 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "114730d8-86d1-4eea-9196-5d67d62a043e")
-		(property "Reference" "D2"
-			(at 30.48 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P6SMB6.8CA/TR13"
-			(at 30.48 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 30.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-			(at 30.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD protection diode, 3.3Vrwm, SOD-923"
-			(at 30.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C78395"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ceed6d03-573b-4e4a-abd6-a966afb42ebd")
-		)
-		(pin "2"
-			(uuid "7c3aa04f-18e0-483f-ba5e-30c978d7e23d")
-		)
-		(instances
-			(project "esp32-homeassistant-rf-bridge"
-				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8636,7 +8540,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 58.42 13.335 0)
 			(effects
 				(font
@@ -8663,7 +8567,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C191023"
+		(property "LCSC" "C8598"
 			(at 116.84 35.56 0)
 			(effects
 				(font
@@ -8691,7 +8595,7 @@
 		(at 228.6 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8966,7 +8870,7 @@
 		(at 255.27 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9324,7 +9228,7 @@
 		(at 237.49 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10135,6 +10039,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 102.87 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5826e172-7966-4560-a906-8e90baa8cf94")
+		(property "Reference" "U3"
+			(at 102.87 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 102.87 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 102.87 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 105.41 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 102.87 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6186"
+			(at 113.538 18.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4c9aaa4e-20a3-4133-b93c-ab67cb755efd")
+		)
+		(pin "1"
+			(uuid "e06e9790-8bfe-4cc1-b853-05c58d75580a")
+		)
+		(pin "3"
+			(uuid "070d7b97-1f23-4c28-862c-f0e860dffbe0")
+		)
+		(instances
+			(project ""
+				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 238.76 46.99 0)
 		(unit 1)
@@ -10279,86 +10261,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:XC6206PxxxMR")
-		(at 102.87 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6240b37c-e5b3-4818-a7a1-e74d2ee0b09a")
-		(property "Reference" "U3"
-			(at 102.87 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XC6206P332MR"
-			(at 102.87 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 102.87 15.875 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
-			(at 102.87 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
-			(at 102.87 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5446"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "34d72ae1-f0ab-4220-9795-625450c28a0f")
-		)
-		(pin "3"
-			(uuid "3d17a4e6-2a6c-4bc1-9804-e348e4dbdf74")
-		)
-		(pin "1"
-			(uuid "395f7d44-261e-41d4-b728-21993f22d641")
-		)
-		(instances
-			(project ""
-				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 30.48 62.23 0)
 		(unit 1)
@@ -10429,7 +10331,7 @@
 		(at 246.38 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10499,7 +10401,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74da7ebd-7e33-47f6-b7d8-aa760077436e")
 		(property "Reference" "C12"
@@ -11162,82 +11064,6 @@
 			(project ""
 				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD9B3.3ST5G")
-		(at 30.48 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "87eff5fb-eba7-4d28-8478-3b7888cc22c4")
-		(property "Reference" "D3"
-			(at 30.48 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P6SMB6.8CA/TR13"
-			(at 30.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 30.48 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-			(at 30.48 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD protection diode, 3.3Vrwm, SOD-923"
-			(at 30.48 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C78395"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a9bd5f76-603c-4b73-90f7-dac7d9d8f60c")
-		)
-		(pin "2"
-			(uuid "de8bfe88-f015-45f7-ae26-d954d27fc682")
-		)
-		(instances
-			(project "esp32-homeassistant-rf-bridge"
-				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -12135,73 +11961,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 34.29 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aab3dead-0f12-4ef8-8eb4-d0a0450a7aec")
-		(property "Reference" "#PWR05"
-			(at 40.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 38.1 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab874745-1194-40cd-81a2-40ad97ceecf5")
-		)
-		(instances
-			(project ""
-				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Interface_Optical:TSOP41xx")
 		(at 97.79 52.07 270)
 		(unit 1)
@@ -12766,73 +12525,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 34.29 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5206ccd-4acb-4cae-8acf-5d47324f2909")
-		(property "Reference" "#PWR06"
-			(at 40.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 38.1 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a355089-eab6-4dcb-ada4-45744f6f6483")
-		)
-		(instances
-			(project "esp32-homeassistant-rf-bridge"
-				(path "/9ac8e10e-6a60-4d32-be94-5bad085be37b"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_Espressif:ESP32-S2-MINI-1")
 		(at 185.42 64.77 0)
 		(unit 1)
@@ -13316,7 +13008,7 @@
 		(at 274.32 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)

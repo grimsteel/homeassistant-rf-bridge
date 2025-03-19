@@ -450,7 +450,7 @@
   },
   "meta": {
     "filename": "esp32-homeassistant-rf-bridge.kicad_pro",
-    "version": 2
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -616,6 +616,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": false
         }
       ],
