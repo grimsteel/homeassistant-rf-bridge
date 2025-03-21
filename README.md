@@ -12,4 +12,7 @@ Case coming soon!
 
 ## PCB
 
+* Front: includes pin sockets for two CC1101 modules. (allows for RX/TX on multiple freqs if needed)
+* Back: space for two 6mm buttons, two IR leds, and one IR receiver.
+
 ![image](https://github.com/user-attachments/assets/1217d0b5-bb71-4ceb-9051-dba940389f5e)
